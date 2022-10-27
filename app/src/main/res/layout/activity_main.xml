@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <RelativeLayout
-        android:id="@+id/Vverh"
+        android:id="@+id/Up"
         android:layout_width="match_parent"
         android:layout_height="50dp"
 
-        android:background="@color/purple_200">
+        android:background="#9B786F">
 
         <Spinner
             android:id="@+id/filter"
@@ -25,19 +26,18 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="0dp"
-            android:prompt="@string/sort"
-            >
+            android:prompt="@string/sort">
 
         </Spinner>
 
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/Niz"
+        android:id="@+id/Down"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/purple_200"
+        android:background="#9B786F"
         android:orientation="horizontal">
 
         <ImageButton
@@ -45,7 +45,7 @@
             android:layout_width="46dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
-            android:backgroundTint="@color/purple_200"
+            android:backgroundTint="#9B786F"
             android:onClick="onClickADD"
             android:src="@drawable/add1"
             android:textAlignment="center"
@@ -61,8 +61,9 @@
         android:id="@+id/BD"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/Niz"
-        android:layout_below="@+id/Vverh">
+        android:layout_above="@+id/Down"
+        android:layout_below="@+id/Up"
+        android:background="#6A9D8D8F">
 
     </ListView>
 
